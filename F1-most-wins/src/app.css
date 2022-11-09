@@ -1,11 +1,11 @@
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 10px;
   line-height: 1.1rem;
   font-weight: 400;
 
-  --bgColor: hsla(320, 3%, 10%, 1);
-  --borderColor: hsla(0, 0%, 80%, 1);
+  --bgColor: #212731;
+  --borderColor: #343d4b;
   --textColor100: hsla(0, 0%, 86%, 1);
 
   background-color: var(--bgColor);
@@ -34,6 +34,20 @@ body {
   min-width: 400px;
   margin: 0 auto;
   padding: 2rem;
+  position: relative;
+  /* box-shadow: 0 0 30px hsla(320, 0%, 3%, .5); */
+  background: var(--bgColor);
   border: 1px solid var(--borderColor);
+  border-radius: 8px;
 }
+/* #app::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: url("./assets/max.jpeg");
+  top: -100px;
+  left: -200px;
+  bottom: 400px;
+  right: 500px;
+} */
 
