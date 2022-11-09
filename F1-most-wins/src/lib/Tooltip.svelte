@@ -2,9 +2,10 @@
   export let data;
   export let xScale;
   export let yScale;
-  export let xPosition;
-  export let yPosition;
+  export let xPosition = 0;
+  export let yPosition = 0;
   export let backgroundColor;
+  export let hoverEffect;
   
 //   $: console.log(xPosition)
 </script>
@@ -33,12 +34,13 @@
     position: relative;
     overflow: hidden;
     padding: 16px 16px 8px 42px;
-    background-color: hsla(320, 3%, 20%, 1);
+    background-color: #212731;
     position: absolute;
     border-radius: 8px;
     box-shadow: 0 0 16px hsla(320, 0%, 10%, .6);
     pointer-events: none;
     width: 150px;
+    z-index: 15;
   }
   h2 {
     font-size: 1.2rem;
@@ -47,8 +49,7 @@
     color: hsla(0, 0%, 100%, 1);
   }
   .drivingInfo {
-    border-top: 1.5px solid hsla(320, 0%, 30%, 1);
-    /* border-bottom: 1.5px solid hsla(320, 0%, 30%, 1); */
+    border-top: 1px solid #343d4b;
     padding: 0.4rem 0 0;
     margin: 0;
   }
@@ -65,7 +66,7 @@
     flex-grow: 1;
     text-align: center;
     padding: 1rem;
-    border-top: 1.5px solid hsla(320, 0%, 30%, 1);
+    border-top: 1px solid #343d4b;
   }
   .winStats div p {
     font-size: 1.6rem;
@@ -75,22 +76,31 @@
     margin: 0.2rem 0;
   }
   .winStats div:first-child {
-    border-right: 1.5px solid hsla(320, 0%, 30%, 1);
+    border-right: 1px solid #343d4b;
   }
   .graphics {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 26px;
+    width: 32px;
   }
   .ferarri {
-    background-color: #9e3f3f;
+    background-image: url("../assets/ferarri.jpeg");
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   .redBull {
-    background-color: orange;
+    background-image: url("../assets/redbull.jpeg");
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   .mercedes {
-    background-color: silver;
+    background-image: url("../assets/mercedes.jpeg");
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 </style>
