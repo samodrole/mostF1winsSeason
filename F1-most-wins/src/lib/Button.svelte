@@ -13,7 +13,7 @@
         border: none;
         cursor: pointer;
         border-right: 1px solid hsla(218, 20%, 13%, 1);
-        padding: 6px 10px;
+        padding: 4px 10px;
         background-color: hsla(218, 10%, 60%, .4);
         transition: background-color 0.25s;
     }
@@ -21,7 +21,10 @@
         background-color: hsla(218, 10%, 60%, .6);
     }
     button.active {
-        background: hsla(27, 91%, 40%, 1);
-        color: #fff;
+        background: hsla(210, 45%, 80%, 1);
+        /* color: #fff; */
+    }
+    button:last-child {
+        border-right: none;
     }
 </style>

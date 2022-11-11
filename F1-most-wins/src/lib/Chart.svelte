@@ -9,15 +9,15 @@
 
     // Colors
 	const backgroundColor = "hsla(218, 20%, 13%, 1)";
-	const highlightBarColor = "#f3760e";
-	const barColor = "hsla(202, 70%, 64%, .7)";
+	const highlightBarColor = "#EF6831";
+	const barColor = "hsla(202, 70%, 40%, .8)";
 	const textColor100 = "hsla(217, 18%, 90%, 1)";
 	const textColor80 = "hsla(217, 18%, 80%, 1)";
-	const subtextTextColor = "hsla(217, 18%, 50%, 1)";
+	const subtextTextColor = "hsla(217, 18%, 60%, 1)";
 	const barBorderColor = "hsla(217, 18%, 40%, 1)";
 	const barLinesColor = "hsla(217, 18%,20%, 1)";
-	const maxWinsLineColor1 = "#f3760e";
-	const maxWinsLineColor2 = "#98c1d9";
+	const maxWinsLineColor1 = "#EF6831";
+	const maxWinsLineColor2 = "hsla(202, 70%, 40%, .8)";
 	const totalRacesBg = "hsla(210, 25%, 20%, .6)";
 
 
@@ -164,5 +164,8 @@
     }
     .recordRow {
         transition: opacity 0.3s ease
+    }
+    g.totalRacesLabel {
+        transition: all 0.2s;
     }
 </style>
