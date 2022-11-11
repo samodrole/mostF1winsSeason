@@ -8,15 +8,15 @@
     let yPosition = 0;
 
     // Colors
-	const backgroundColor = "#212731";
-	const highlightBarColor = "#f35b04";
+	const backgroundColor = "hsla(218, 20%, 13%, 1)";
+	const highlightBarColor = "#f3760e";
 	const barColor = "hsla(202, 70%, 64%, .7)";
 	const textColor100 = "hsla(217, 18%, 90%, 1)";
 	const textColor80 = "hsla(217, 18%, 80%, 1)";
 	const subtextTextColor = "hsla(217, 18%, 50%, 1)";
 	const barBorderColor = "hsla(217, 18%, 40%, 1)";
 	const barLinesColor = "hsla(217, 18%,20%, 1)";
-	const maxWinsLineColor1 = "#f35b04";
+	const maxWinsLineColor1 = "#f3760e";
 	const maxWinsLineColor2 = "#98c1d9";
 	const totalRacesBg = "hsla(210, 25%, 20%, .6)";
 

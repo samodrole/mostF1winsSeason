@@ -1,6 +1,7 @@
 <script>
   import {data} from "./assets/data.js"
   import Chart from "./lib/Chart.svelte"
+  import Button from "./lib/Button.svelte"
 
   let selectedSort = "wins";
   let sortOptions = ['wins', 'totalRaces', 'year', 'percent'];
@@ -11,13 +12,11 @@
 
 <main>
   <h1>Most wins in a single F1 season</h1>
-
-  <select bind:value={selectedSort} id="sortBy" class="selector">
-    <option value="wins">Wins</option>
-    <option value="totalRaces">Total races</option>
-    <option value="year">Year</option>
-    <option value="percent">Percentage</option>
-  </select>
+  <div class="sortSelection">
+    {#each sortOptions as  sort, i}
+      <Button active={selectedSort === sortOptions[i]} on:click={() => (selectedSort = sortOptions[i])}  sortBy={sort}></Button>
+    {/each}
+  </div>
   <Chart data={sortedData}/>
 </main>
 
