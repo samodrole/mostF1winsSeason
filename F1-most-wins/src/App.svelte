@@ -13,6 +13,7 @@
 <main>
   <h1>Most wins in a single F1 season</h1>
   <div class="sortSelection">
+    <p>Sort by:</p>
     {#each sortOptions as  sort, i}
       <Button active={selectedSort === sortOptions[i]} on:click={() => (selectedSort = sortOptions[i])}  sortBy={sort}></Button>
     {/each}
@@ -29,6 +30,9 @@
     display: grid;
     position: relative;
     max-width: 660px;
+  }
+  .sortSelection {
+    margin-bottom: 16px;
   }
 
 </style>
