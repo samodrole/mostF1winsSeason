@@ -6,6 +6,14 @@
     let hoverEffect = false;
     let xPosition = 0;
     let yPosition = 0;
+    export let width;
+    export let height;
+
+    // import { onMount } from 'svelte';
+
+	// onMount(() => {
+	// 	console.log('the component has mounted', width);
+	// });
 
     // Colors
 	const backgroundColor = "hsla(218, 20%, 13%, 1)";
@@ -20,9 +28,6 @@
 	const maxWinsLineColor2 = "hsla(202, 70%, 40%, .8)";
 	const totalRacesBg = "hsla(210, 25%, 20%, .6)";
 
-
-    const width = 660;
-	const height = 460;
 	const margin = {
 		top: 0,
 		bottom: 0,
