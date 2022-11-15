@@ -35,7 +35,7 @@
 		right: 0
 	}
 	const innerHeight = height - margin.top - margin.bottom;
-	const innerWidth = width - margin.left - margin.right;
+	$: innerWidth = width - margin.left - margin.right;
 
     const yDomain = data.map( (d) => d.year)
 	
