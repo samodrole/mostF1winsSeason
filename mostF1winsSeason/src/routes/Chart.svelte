@@ -6,7 +6,7 @@
     let hoverEffect = false;
     let xPosition = 0;
     let yPosition = 0;
-    export let width;
+    export let width = 600;
     export let height;
 
     // import { onMount } from 'svelte';
