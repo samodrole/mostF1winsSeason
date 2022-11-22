@@ -6,7 +6,7 @@
     let hoverEffect = false;
     let xPosition = 0;
     let yPosition = 0;
-    export let width = 600;
+    export let width;
     export let height;
 
     // import { onMount } from 'svelte';
@@ -103,7 +103,7 @@
                     </g>
 
                     <!-- Percent sucess column -->
-                    <g transform={`translate(180, 0)`} class="gElement" on:mouseover={() => {
+                    <g transform={`translate(170, 0)`} class="gElement" on:mouseover={() => {
                         hoverEffect = true;
                         tooltipData = record
                     }} on:focus={() => {
@@ -114,7 +114,7 @@
                     </g>
 
                     <!-- Chart column -->
-                    <g transform={`translate(190, 0)`} on:mousemove={mousePosition} on:mouseover={() => {
+                    <g transform={`translate(180, 0)`} on:mousemove={mousePosition} on:mouseover={() => {
                         tooltipData = record;
                         hoverEffect = false;
                         }} on:focus={() => tooltipData = record} tabindex="0" class="gElement">
@@ -164,7 +164,7 @@
         </g>
     </svg>
     {#if tooltipData &&  !hoverEffect}
-		<Tooltip data={tooltipData} {xScale} {yScale} {xPosition} {yPosition} {backgroundColor} {hoverEffect}/>
+		<Tooltip data={tooltipData} {xScale} {yScale} {xPosition} {yPosition} {backgroundColor} {hoverEffect} {width}/>
 	{/if}
 </div>
 

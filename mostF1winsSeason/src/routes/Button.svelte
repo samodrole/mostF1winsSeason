@@ -27,4 +27,9 @@
     button:last-child {
         border-right: none;
     }
+    @media (max-width:600px) {
+        button {
+            padding: 8px 16px;
+        }
+    }
 </style>

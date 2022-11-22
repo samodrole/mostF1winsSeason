@@ -6,11 +6,13 @@
   export let yPosition = 0;
   export let backgroundColor;
   export let hoverEffect;
+  export let width;
+
   
-//   $: console.log(xPosition)
+  $: console.log(width)
 </script>
 
-<div class="tooltip" style="{xPosition < 440 ? `left:${xPosition}px` : `right:${660 - xPosition}px`}; top:{yPosition - 158}px;">
+<div class="tooltip" style="{xPosition < 200 ? `left:${xPosition}px` : `left:${xPosition -200}px`}; top:{yPosition - 158}px;">
     <h2>{data.driver}</h2>
     <div class="winStats">
         <div>

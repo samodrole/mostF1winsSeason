@@ -31,7 +31,7 @@ body {
   max-width: 960px;
   min-width: 400px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 2rem 0rem 2rem;
   position: relative;
   /* box-shadow: 0 0 30px hsla(320, 0%, 3%, .5); */
   background: var(--bgColor);
@@ -40,6 +40,16 @@ body {
   display: flex;
 		flex-direction: column;
 		/* min-height: 100vh; */
+}
+
+@media (max-width:600px) {
+  #app {
+      border: none;
+      padding: 4rem 2rem 4rem 2rem;
+  }
+  body {
+    place-items: start;
+  }
 }
 
 
