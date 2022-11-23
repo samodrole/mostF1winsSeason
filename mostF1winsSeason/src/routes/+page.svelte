@@ -25,7 +25,7 @@
     <div class="content" bind:clientWidth={width}>
         <div class="header">
             <h1>Most wins <br/><span>in a single F1 season</span></h1>
-            <p>The number of races over the calendar year has kept increasing with the evolution of Formula 1 (F1). It has gone from seven races in 1950 to 30 (24+6 sprint races) next year in 2023. Depending on that, a driver has more chances to increase the number of wins per year. In 2022, Max Verstappen won 15 races, breaking the record for the most number of Grand Prix wins in a season. This is subsequent in the list of the most wins in a single season, where the top five belong to the 21st-century drivers. </p>
+            <p>The number of races over the calendar year has kept increasing with the evolution of Formula 1 (F1). It has gone from seven races in 1950 to 30 (24+6 sprint races) next year in 2023. Depending on that, a driver has more chances to increase the number of wins per year. <b>In 2022, Max Verstappen won 15 races</b>, breaking the record for the most number of Grand Prix wins in a season. This is subsequent in the list of the most wins in a single season, where the top five belong to the 21st-century drivers. </p>
         </div>
         <div class="chart">
         <div class="sortSelection">
@@ -54,7 +54,7 @@
       background-image: url("$lib/images/max_img.png");
         background-size: cover;                
         background-repeat: no-repeat;
-        background-position: bottom right;
+        background-position: top -140px right;
         position: relative;
     }
     .imageMax::before {
@@ -107,6 +107,7 @@
       main {
         display: grid;
         grid-template-columns: 400px auto;
+        grid-template-rows: 1fr auto;
         gap: 8px;
         position: relative;
       }
@@ -124,7 +125,7 @@
       }
       .info {
         grid-column-start: span 3;
-        border-top: 1px solid hsla(217, 18%, 25%, 1);
+        border-top: 1px solid hsla(217, 18%, 18%, 1);
         padding: 8px 0;
       }
       .info p {
@@ -174,13 +175,18 @@
         }
         main {
             display: grid;
-            grid-template-columns: 1fr 40px;
-            gap: 8px;
-            position: relative;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto;
         }
         .imageMax img {
             display: none;
         }
+        .imageMax::before {
+        height: 400px;
+        top: -360px;
+        left: 0;
+        width: 100%;
+    }
 	}
     
     </style>
