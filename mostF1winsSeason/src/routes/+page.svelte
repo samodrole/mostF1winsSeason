@@ -20,7 +20,7 @@
 
   <main >
     <div class="imageMax">
-      <img src={max} content="Max Verstapen cover" alt="Max Verstapen cover"/>
+      <!-- <img src={max} content="Max Verstapen cover" alt="Max Verstapen cover"/> -->
     </div>
     <div class="content" bind:clientWidth={width}>
         <div class="header">
@@ -50,12 +50,25 @@
 
 
   <style>
-    /* .imageMax {
-      background-image: url({max});
+    .imageMax {
+      background-image: url("$lib/images/max_img.png");
         background-size: cover;                
         background-repeat: no-repeat;
-        background-position: center center;
-    } */
+        background-position: bottom right;
+        position: relative;
+    }
+    .imageMax::before {
+        content: "";
+        position: absolute;
+        height: 140px;
+        top: -140px;
+        left: 0;
+        width: 400px;
+      background-image: url("$lib/images/max_img.png");
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
       h1 {
         font-size: 4.2rem;
         line-height: 3.8rem;
@@ -93,7 +106,7 @@
       }
       main {
         display: grid;
-        grid-template-columns: 300px auto;
+        grid-template-columns: 400px auto;
         gap: 8px;
         position: relative;
       }
