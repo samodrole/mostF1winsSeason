@@ -15,23 +15,6 @@
   <svelte:head>
       <title>Most wins in a single F1 season</title>
       <meta name="description" content="Most wins in a single F1 season" />
-
-        <meta property="og:site_name" content="onechart">
-        <meta property="og:type" content="article">
-        <meta property="og:title" content="Most wins in a single F1 season">
-        <meta property="og:url" content="http://onechart.xyz/most_f1_wins/">
-        <meta property="og:description" content="In 2022, Max Verstappen won 15 races, breaking the record for the most number of Grand Prix wins in a season.">
-        <meta property="og:image" content="$lib/images/mostWins.png">
-
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="onechart">
-        <meta name="twitter:creator" content="@samodrole">
-        <meta name="twitter:url" content="http://onechart.xyz/most_f1_wins/">
-        <meta name="twitter:title" content="Most wins in a single F1 season">
-        <meta name="twitter:description" content="In 2022, Max Verstappen won 15 races, breaking the record for the most number of Grand Prix wins in a season.">
-        <meta name="twitter:image" content="$lib/images/mostWins.png">
-
-
   </svelte:head>
 
   <main >
