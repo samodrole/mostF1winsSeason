@@ -99,7 +99,7 @@
                         tooltipData = record
                     }}>
                         <text font-size = "12" font-weight="500" x=0 dominant-baseline="middle" y={yScale.bandwidth()/2 - 1} fill={textColor100}>{record.driver}</text>
-                        <text font-size = "10" font-style="italic" font-weight="300" x=0 dominant-baseline="middle" y={yScale.bandwidth()/2 + 10} fill={subtextTextColor}>{record.year}</text>
+                        <text font-size = "10" font-style="italic" font-weight="300" x=0 dominant-baseline="middle" y={yScale.bandwidth()/2 + 11} fill={subtextTextColor}>{record.year}</text>
                     </g>
 
                     <!-- Percent sucess column -->

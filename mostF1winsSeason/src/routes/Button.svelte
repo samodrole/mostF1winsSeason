@@ -16,12 +16,13 @@
         padding: 4px 10px;
         background-color: hsla(218, 10%, 60%, .4);
         transition: background-color 0.25s;
+        color: #060E21;
     }
     button:hover {
         background-color: hsla(218, 10%, 60%, .6);
     }
     button.active {
-        background: hsla(210, 45%, 80%, 1);
+        background: hsla(210, 65%, 80%, 1);
         /* color: #fff; */
     }
     button:last-child {
