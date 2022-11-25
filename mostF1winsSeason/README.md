@@ -1,4 +1,4 @@
-# ![F1 wins](https://github.com/samodrole/mostF1winsSeason/blob/main/images/mostWinsCover.png)
+# ![WebApp](https://github.com/samodrole/mostF1winsSeason/images/mostWinsCover.png)
 # Most wins in a single F1 season
 <table>
 <tr>
@@ -29,5 +29,8 @@ This work is using two chart types
 
 
 [Samo Drole ](https://github.com/samodrole) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+
+
 
 
