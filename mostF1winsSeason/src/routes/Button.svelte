@@ -5,7 +5,7 @@
 </script>
 
 
-<button class:active on:click><slot>{sortBy === "wins" ? "Wins" : sortBy === "totalRaces" ? "Total races" : sortBy === "year" ? "Year" : sortBy === "percent" ? "Success rate" : ""}</slot></button>
+<button class:active on:click><slot>{sortBy === "wins" ? "Wins" : sortBy === "totalRaces" ? "Total races" : sortBy === "year" ? "Year" : sortBy === "percent" ? "Win rate" : ""}</slot></button>
 
 
 <style>

@@ -1,6 +1,7 @@
 <script>
     import {scaleLinear, extent, scaleBand, max} from 'd3';
     import Tooltip from "./Tooltip.svelte"
+    import LineChart from "./LineChart.svelte"
     export let data;
     let tooltipData;
     let hoverEffect = false;
@@ -41,7 +42,7 @@
 	
 	const xExtent = extent(data, (d) => d.totalRaces)
 	const xMax = max(data, (d) => d.totalRaces )
-	$: xScale = scaleLinear().domain([0, xMax]).range([0, innerWidth - 230])
+	$: xScale = scaleLinear().domain([0, xMax]).range([0, innerWidth - 210])
 	$: yScale = scaleBand().domain(yDomain).range([innerHeight, 0])
 
     const xScale2 = (maxRaces) => scaleLinear().domain([0, maxRaces]).range([0, innerWidth])
@@ -51,11 +52,7 @@
         yPosition = e.offsetY
         // console.log(e)
     }
-
-
 </script>
-
-
 
 <div class="chartWrapper" >
     <svg {width} {height} on:mouseleave={() => {

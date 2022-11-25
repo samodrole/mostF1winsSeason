@@ -5,7 +5,8 @@ export const data = [
 	year: 2004,
 	wins: 13,
 	totalRaces: 18,
-	percent: 72.2,	
+	percent: 72.2,
+	positions: [1,1,1,1,1,20,1,1,1,1,1,1,1,2,2,12,1,7],	
 	},
 {
 	driver: "Sebastian Vettel",
@@ -14,6 +15,7 @@ export const data = [
 	wins: 13,
 	totalRaces: 19,
 	percent: 68.4,
+	positions: [3,1,4,1,4,2,1,20,1,3,1,1,1,1,1,1,1,1,1],
 	},
 {
 	driver: "Max Verstappen",
@@ -22,6 +24,7 @@ export const data = [
 	wins: 15,
 	totalRaces: 22,
 	percent: 68.2,
+	positions: [19, 1, 20, 1,1,1,3,1,1,7,2,1,1,1,1,1,7,1,1,1,6,1],
 	},
 {
 	driver: "Michael Schumacher",
@@ -30,6 +33,7 @@ export const data = [
 	wins: 11,
 	totalRaces: 17,
 	percent: 68.4,
+	positions: [1,3,1,1,1,1,2,1,2,1,1,1,2,1,2,2,1],
 	},
 {
 	driver: "Sebastian Vettel",
@@ -38,6 +42,7 @@ export const data = [
 	wins: 11,
 	totalRaces: 19,
 	percent: 57.9,
+	positions: [1,1,2,1,1,1,2,1,2,4,2,1,1,1,3,1,1,20,2],
 	},
 {
 	driver: "Lewis Hamilton",
@@ -46,6 +51,7 @@ export const data = [
 	wins: 11,
 	totalRaces: 19,
 	percent: 57.9,
+	positions: [20,1,1,1,1,2,20,2,1,3,3,20,1,1,1,1,1,2,1],
 	},
 {
 	driver: "Lewis Hamilton",
@@ -54,6 +60,7 @@ export const data = [
 	wins: 11,
 	totalRaces: 21,
 	percent: 52.4,
+	positions: [2,3,4,1,1,3,5,1,20,2,1,1,2,1,1,1,1,3,4,1,1],
 	},
 {
 	driver: "Lewis Hamilton",
@@ -62,6 +69,7 @@ export const data = [
 	wins: 11,
 	totalRaces: 21,
 	percent: 52.4,
+	positions: [2,1,1,2,1,1,1,1,5,1,9,1,2,3,4,1,3,1,2,7,1],
 	},
 {
 	driver: "Lewis Hamilton",
@@ -70,6 +78,7 @@ export const data = [
 	wins: 11,
 	totalRaces: 17,
 	percent: 62.5,
+	positions: [4,1,1,1,2,1,1,7,1,3,1,1,1,1,1,21,3],
 	},
 {
 	driver: "Lewis Hamilton",
@@ -78,6 +87,7 @@ export const data = [
 	wins: 10,
 	totalRaces: 19,
 	percent: 52.6,
+	positions: [1,2,1,1,2,3,1,2,1,6,1,1,20,1,1,1,2,2,2],
 	},
 {
 	driver: "Lewis Hamilton",
@@ -86,6 +96,7 @@ export const data = [
 	wins: 10,
 	totalRaces: 20,
 	percent: 50.0,
+	positions: [2,3,7,2,20,1,1,5,1,1,1,1,3,2,3,20,3,1,1,1,1],
 	},
 {
 	driver: "Max Verstappen",
@@ -94,6 +105,7 @@ export const data = [
 	wins: 10,
 	totalRaces: 22,
 	percent: 45.4,
+	positions: [2,1,2,2,1,18,1,1,1,20,9,1,1,20,2,2,1,1,2,2,2,1],
 	},
 
 ]
