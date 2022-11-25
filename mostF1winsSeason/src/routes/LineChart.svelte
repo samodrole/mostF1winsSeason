@@ -1,5 +1,5 @@
 <script>
-     import {scaleLinear, extent, scaleBand, max, line, curveNatural} from 'd3';
+     import {scaleLinear, extent, scaleBand, max, line, curveStep} from 'd3';
     export let data;
     export let width;
     export let height;
@@ -23,7 +23,7 @@
     console.log(yExtent)
     $: yScale = scaleLinear().domain([0, 19]).range([0,innerHeight])
 
-    $: path = line().x( (d,i) => xScale(i)).y( (d,i) => yScale(d))
+    $: path = line().x( (d,i) => xScale(i)).y( (d,i) => yScale(d)).curve(curveStep);
 
 
 </script>
@@ -42,18 +42,18 @@
         {#if d === 1}
         <g >
             <g transform="translate(-5,-5), rotate(45,{xScale(i) + (10/2)},{yScale(d) + (10/2)})">
-                <rect fill="hsla(218, 20%, 13%, .8)" x={xScale(i)} y={yScale(d)} width="10" height="10" stroke-width="1" stroke="hsla(30, 55%, 50%, 1)"></rect>
+                <rect fill="hsla(218, 20%, 13%, .8)" x={xScale(i)} y={yScale(d)} width="10" height="10" stroke-width="1" stroke="hsla(30, 55%, 50%, 1)" ></rect>
             </g>
             <text dx="-0.5" dy="0.5" x={xScale(i)} y={yScale(d)} fill="white" text-anchor="middle" alignment-baseline="middle" font-size="8">{d}</text>
         </g>
         {:else if d === 20}
             <g>
-                <circle r="6" fill="hsla(218, 20%, 13%, .8)" stroke-width="1" stroke="hsla(0, 55%, 50%, 1)" cx={xScale(i)} cy={yScale(d)}></circle>
+                <circle r="6" fill="hsla(218, 20%, 13%, .8)" stroke-width="1" stroke="hsla(0, 55%, 50%, 1)" cx={xScale(i)} cy={yScale(d)} ></circle>
                 <text x={xScale(i)} y={yScale(d)} fill="white" text-anchor="middle" alignment-baseline="middle" font-size="6">D</text>
             </g>
         {:else if d === 21}
             <g>
-                <circle r="4" fill="hsla(218, 20%, 13%, 1)" stroke-width="1" stroke="hsla(0, 55%, 50%, 1)" cx={xScale(i)} cy={yScale(d)}></circle>
+                <circle r="4" fill="hsla(218, 20%, 13%, 1)" stroke-width="1" stroke="hsla(0, 55%, 50%, 1)" cx={xScale(i)} cy={yScale(d)} ></circle>
                 <text dx="-9"  x={xScale(i)} y={yScale(d)} fill="white" text-anchor="end" alignment-baseline="middle" font-size="8">Race absence
                 (COVID-19)</text>
             </g>
