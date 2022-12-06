@@ -113,9 +113,9 @@ function add_attribute(name, value, boolean) {
 }
 export {
   safe_not_equal as a,
-  subscribe as b,
+  add_attribute as b,
   create_ssr_component as c,
-  add_attribute as d,
+  subscribe as d,
   escape as e,
   each as f,
   getContext as g,

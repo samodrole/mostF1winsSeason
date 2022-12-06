@@ -1,6 +1,6 @@
-import { c as create_ssr_component, d as add_attribute, e as escape, f as each, v as validate_component } from "../../chunks/index.js";
+import { c as create_ssr_component, b as add_attribute, e as escape, f as each, v as validate_component } from "../../chunks/index.js";
 import { extent, max, scaleLinear, scaleBand } from "d3";
-const data = [
+/* empty css                   */const data = [
   {
     driver: "Michael Schumacher",
     team: "Ferarri",
@@ -192,10 +192,9 @@ const Button = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
   return `<button class="${["svelte-x93js5", active ? "active" : ""].join(" ").trim()}">${slots.default ? slots.default({}) : `${escape(sortBy === "wins" ? "Wins" : sortBy === "totalRaces" ? "Total races" : sortBy === "year" ? "Year" : sortBy === "percent" ? "Win rate" : "")}`}</button>`;
 });
-const styles = "";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: '.imageMax.svelte-hrer06.svelte-hrer06{background-image:url("$lib/images/max_img.png");background-size:cover;background-repeat:no-repeat;background-position:top -140px right;position:relative}.imageMax.svelte-hrer06.svelte-hrer06::before{content:"";position:absolute;height:140px;top:-140px;left:0;width:400px;background-image:url("$lib/images/max_img.png");background-size:cover;background-repeat:no-repeat;background-position:top right}h1.svelte-hrer06.svelte-hrer06{font-size:4.2rem;line-height:3.8rem;margin:0 0 16px;font-weight:700;position:relative;z-index:5}p.svelte-hrer06.svelte-hrer06{font-size:1.2rem;line-height:1.8rem;font-weight:300;margin:0 0 16px;color:hsla(217, 18%, 80%, 1)}p.svelte-hrer06 b.svelte-hrer06{color:#EF6831}.info.svelte-hrer06 p.svelte-hrer06:last-child{border:none}h1.svelte-hrer06>span.svelte-hrer06{font-size:3.6rem}main.svelte-hrer06.svelte-hrer06{display:grid;grid-template-columns:400px auto;grid-template-rows:1fr auto;gap:8px;position:relative}.imageMax.svelte-hrer06.svelte-hrer06{grid-column-start:1;grid-column-end:2}.header.svelte-hrer06.svelte-hrer06{margin-bottom:24px}.content.svelte-hrer06.svelte-hrer06{grid-column-start:2;grid-column-end:3;width:100%}.info.svelte-hrer06.svelte-hrer06{grid-column-start:span 3;border-top:1px solid hsla(217, 18%, 18%, 1);padding:8px 0}.info.svelte-hrer06 p.svelte-hrer06{color:hsla(217, 18%, 25%, 1);display:inline-block;margin:0 8px 0 0;padding-right:8px;border-right:1px solid hsla(217, 18%, 15%, 1)}.info.svelte-hrer06:hover p.svelte-hrer06{color:hsla(217, 18%, 30%, 1);transition:color, 0.25s}.info.svelte-hrer06:hover a.svelte-hrer06{color:hsla(217, 18%, 30%, 1);transition:color, 0.25s}.info.svelte-hrer06 a.svelte-hrer06{color:hsla(217, 18%, 25%, 1);transition:color, 0.25s}.info.svelte-hrer06 a.svelte-hrer06:hover{color:hsla(217, 18%, 50%, 1)}.sortSelection.svelte-hrer06.svelte-hrer06{margin-bottom:16px}.sortSelection.svelte-hrer06 p.svelte-hrer06{margin:0 0 4px;padding-left:3px;color:hsla(217, 18%, 60%, 1)}.segmentedControl.svelte-hrer06.svelte-hrer06{padding:2px;border:1px solid hsla(217, 18%, 25%, 1);display:inline-block;border-radius:2px}@media(max-width:600px){.content.svelte-hrer06.svelte-hrer06{grid-column-start:1}main.svelte-hrer06.svelte-hrer06{display:grid;grid-template-columns:1fr;grid-template-rows:1fr auto}.imageMax.svelte-hrer06.svelte-hrer06::before{height:400px;top:-380px;left:0;width:100%}}',
+  code: '.artwork.svelte-1yvwufc.svelte-1yvwufc{display:grid;grid-template-columns:400px minmax(300px, 1fr);grid-template-rows:1fr auto;gap:8px;max-width:960px;min-width:400px;padding:4rem 2rem 0rem 2rem;position:relative;background:var(--bgColor);border:1px solid var(--borderColor);border-radius:8px;height:fit-content;align-self:center}.imageMax.svelte-1yvwufc.svelte-1yvwufc{background-image:url("$lib/images/max_img.png");background-size:cover;background-repeat:no-repeat;background-position:top -140px right;position:relative;grid-column-start:1;grid-column-end:2}.imageMax.svelte-1yvwufc.svelte-1yvwufc::before{content:"";position:absolute;height:140px;top:-140px;left:0;width:400px;background-image:url("$lib/images/max_img.png");background-size:cover;background-repeat:no-repeat;background-position:top right}h1.svelte-1yvwufc.svelte-1yvwufc{font-size:4.2rem;line-height:3.8rem;margin:0 0 16px;font-weight:700;position:relative;z-index:5}p.svelte-1yvwufc.svelte-1yvwufc{font-size:1.2rem;line-height:1.8rem;font-weight:300;margin:0 0 16px;color:hsla(217, 18%, 80%, 1)}p.svelte-1yvwufc b.svelte-1yvwufc{color:#EF6831}.info.svelte-1yvwufc p.svelte-1yvwufc:last-child{border:none}h1.svelte-1yvwufc>span.svelte-1yvwufc{font-size:3.6rem}.header.svelte-1yvwufc.svelte-1yvwufc{margin-bottom:24px}.content.svelte-1yvwufc.svelte-1yvwufc{grid-column-start:2;grid-column-end:3;width:100%}.info.svelte-1yvwufc.svelte-1yvwufc{grid-column-start:span 3;border-top:1px solid hsla(217, 18%, 18%, 1);padding:8px 0}.info.svelte-1yvwufc p.svelte-1yvwufc{color:hsla(217, 18%, 25%, 1);display:inline-block;margin:0 8px 0 0;padding-right:8px;border-right:1px solid hsla(217, 18%, 15%, 1)}.info.svelte-1yvwufc:hover p.svelte-1yvwufc{color:hsla(217, 18%, 30%, 1);transition:color, 0.25s}.info.svelte-1yvwufc:hover a.svelte-1yvwufc{color:hsla(217, 18%, 30%, 1);transition:color, 0.25s}.info.svelte-1yvwufc a.svelte-1yvwufc{color:hsla(217, 18%, 25%, 1);transition:color, 0.25s}.info.svelte-1yvwufc a.svelte-1yvwufc:hover{color:hsla(217, 18%, 50%, 1)}.sortSelection.svelte-1yvwufc.svelte-1yvwufc{margin-bottom:16px}.sortSelection.svelte-1yvwufc p.svelte-1yvwufc{margin:0 0 4px;padding-left:3px;color:hsla(217, 18%, 60%, 1)}.segmentedControl.svelte-1yvwufc.svelte-1yvwufc{padding:2px;border:1px solid hsla(217, 18%, 25%, 1);display:inline-block;border-radius:2px}@media(max-width:600px){.content.svelte-1yvwufc.svelte-1yvwufc{grid-column-start:1}.artwork.svelte-1yvwufc.svelte-1yvwufc{display:grid;grid-template-columns:1fr;grid-template-rows:1fr auto;border:none;padding:300px 4rem 4rem 2rem;align-self:flex-start;margin:0}.imageMax.svelte-1yvwufc.svelte-1yvwufc::before{height:400px;top:-380px;left:0;width:100%}}@media(max-height:860px){.artwork.svelte-1yvwufc.svelte-1yvwufc{align-self:flex-start}}',
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -207,11 +206,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   sortedData = data.sort((a, b) => b[selectedSort] - a[selectedSort]);
   return `${$$result.head += `<!-- HEAD_svelte-1heub1z_START -->${$$result.title = `<title>Most wins in a single F1 season</title>`, ""}<meta name="${"description"}" content="${"Most wins in a single F1 season"}"><!-- HEAD_svelte-1heub1z_END -->`, ""}
 
-  <main class="${"svelte-hrer06"}"><div class="${"imageMax svelte-hrer06"}"></div>
-    <div class="${"content svelte-hrer06"}"><div class="${"header svelte-hrer06"}"><h1 class="${"svelte-hrer06"}">Most wins <br><span class="${"svelte-hrer06"}">in a single F1 season</span></h1>
-            <p class="${"svelte-hrer06"}">The number of races over the calendar year has gone from seven races in 1950 to 30 (24+6 sprint races) next year in 2023. Depending on that, a driver has more chances to increase the number of wins per year. <b class="${"svelte-hrer06"}">In 2022, Max Verstappen won 15 races</b>, breaking the record for the most number of Grand Prix wins in a season.</p></div>
-        <div class="${"chart"}"><div class="${"sortSelection svelte-hrer06"}"><p class="${"svelte-hrer06"}">Sort by:</p>
-                <div class="${"segmentedControl svelte-hrer06"}">${each(sortOptions, (sort, i) => {
+  <div class="${"artwork svelte-1yvwufc"}"><div class="${"imageMax svelte-1yvwufc"}"></div>
+    <div class="${"content svelte-1yvwufc"}"><div class="${"header svelte-1yvwufc"}"><h1 class="${"svelte-1yvwufc"}">Most wins <br><span class="${"svelte-1yvwufc"}">in a single F1 season</span></h1>
+            <p class="${"svelte-1yvwufc"}">The number of races over the calendar year has gone from seven races in 1950 to 30 (24+6 sprint races) next year in 2023. Depending on that, a driver has more chances to increase the number of wins per year. <b class="${"svelte-1yvwufc"}">In 2022, Max Verstappen won 15 races</b>, breaking the record for the most number of Grand Prix wins in a season.</p></div>
+        <div class="${"chart"}"><div class="${"sortSelection svelte-1yvwufc"}"><p class="${"svelte-1yvwufc"}">Sort by:</p>
+                <div class="${"segmentedControl svelte-1yvwufc"}">${each(sortOptions, (sort, i) => {
     return `${validate_component(Button, "Button").$$render(
       $$result,
       {
@@ -223,12 +222,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     )}`;
   })}</div></div>
             ${validate_component(Chart, "Chart").$$render($$result, { data: sortedData, width, height: 460 }, {}, {})}</div></div>
-    <div class="${"info svelte-hrer06"}"><p class="${"svelte-hrer06"}">Design by: <a href="${"https://twitter.com/samodrole"}" target="${"_blank"}" class="${"svelte-hrer06"}">Samo Drole</a></p>
-        <p class="${"svelte-hrer06"}">Data source: <a href="${"https://en.wikipedia.org/wiki/List_of_Formula_One_driver_records#Total_wins:~:text=9%5D%5B10%5D-,Most%20wins%20in%20a%20season,-%5Bedit%5D"}" target="${"_blank"}" rel="${"noreferrer"}" class="${"svelte-hrer06"}">Wikipeadia</a></p>
-        <p class="${"svelte-hrer06"}">Image: <a href="${"https://www.ixpap.com/max-verstappen-wallpapers/"}" target="${"_blank"}" rel="${"noreferrer"}" class="${"svelte-hrer06"}">ixpap</a></p>
-        <p class="${"svelte-hrer06"}">Content: <a href="${"https://khelnow.com/olympic-sports/2022-10-olympics-formula-one-top-five-drivers-with-most-win-in-season#:~:text=Top%205%20drivers%20with%20most%20wins%20in%20a%20single%20F1%20season"}" target="${"_blank"}" rel="${"noreferrer"}" class="${"svelte-hrer06"}">khelnow</a></p></div>
-
-  </main>`;
+    <div class="${"info svelte-1yvwufc"}"><p class="${"svelte-1yvwufc"}">Design by: <a href="${"https://twitter.com/samodrole"}" target="${"_blank"}" class="${"svelte-1yvwufc"}">Samo Drole</a></p>
+        <p class="${"svelte-1yvwufc"}">Data source: <a href="${"https://en.wikipedia.org/wiki/List_of_Formula_One_driver_records#Total_wins:~:text=9%5D%5B10%5D-,Most%20wins%20in%20a%20season,-%5Bedit%5D"}" target="${"_blank"}" rel="${"noreferrer"}" class="${"svelte-1yvwufc"}">Wikipeadia</a></p>
+        <p class="${"svelte-1yvwufc"}">Image: <a href="${"https://www.ixpap.com/max-verstappen-wallpapers/"}" target="${"_blank"}" rel="${"noreferrer"}" class="${"svelte-1yvwufc"}">ixpap</a></p>
+        <p class="${"svelte-1yvwufc"}">Content: <a href="${"https://khelnow.com/olympic-sports/2022-10-olympics-formula-one-top-five-drivers-with-most-win-in-season#:~:text=Top%205%20drivers%20with%20most%20wins%20in%20a%20single%20F1%20season"}" target="${"_blank"}" rel="${"noreferrer"}" class="${"svelte-1yvwufc"}">khelnow</a></p></div>
+  </div>`;
 });
 export {
   Page as default

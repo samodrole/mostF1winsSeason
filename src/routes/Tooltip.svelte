@@ -13,7 +13,7 @@
   $: console.log(width)
 </script>
 
-<div class="tooltip" style="{xPosition < 200 ? `left:${xPosition}px` : `left:${xPosition -300}px`}; top:{yPosition - 210}px;">
+<div class="tooltip" style="{(xPosition < 300) ? `left:0px` : `left:${xPosition -300}px`}; top:{yPosition - 210}px;">
     <h2>{data.driver}</h2>
     <div class="winStats">
         <div>
