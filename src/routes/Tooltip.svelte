@@ -98,19 +98,19 @@
     width: 32px;
   }
   .ferarri {
-    background-image: url("$lib/images/ferarri.jpeg");
+    background-image: url("$lib/images/ferarri.png");
     background-size: cover;                
     background-repeat: no-repeat;
     background-position: center center;
   }
   .redBull {
-    background-image: url("$lib/images/redbull.jpeg");
+    background-image: url("$lib/images/redbull.png");
     background-size: cover;                
     background-repeat: no-repeat;
     background-position: center center;
   }
   .mercedes {
-    background-image: url("$lib/images/mercedes.jpeg");
+    background-image: url("$lib/images/mercedes.png");
     background-size: cover;                
     background-repeat: no-repeat;
     background-position: center center;

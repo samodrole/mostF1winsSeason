@@ -54,7 +54,7 @@
         grid-template-rows: 1fr auto;
         gap: 8px;
         max-width: 960px;
-        min-width: 400px;
+        min-width: 200px;
         padding: 4rem 2rem 0rem 2rem;
         position: relative;
         background: var(--bgColor);
@@ -125,7 +125,7 @@
         padding: 8px 0;
       }
       .info p {
-        color: hsla(217, 18%, 25%, 1);
+        color: rgb(79, 89, 105);
         display: inline-block;
         margin: 0 8px 0 0;
         padding-right: 8px;
@@ -140,7 +140,7 @@
         transition: color, 0.25s;
       }
       .info a {
-        color: hsla(217, 18%, 25%, 1);
+        color: rgb(79, 89, 105);
         transition: color, 0.25s;
       }
       .info a:hover {
@@ -170,7 +170,7 @@
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto;
             border: none;
-            padding: 300px 4rem 4rem 2rem;
+            padding: 300px 16px 4rem 16px;
             align-self: flex-start;
             margin: 0;
         }

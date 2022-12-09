@@ -7,7 +7,7 @@ const css$1 = {
 };
 const TopBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<header class="${"svelte-243kpl"}"><a href="${"http://onechart.xyz/"}" class="${"svelte-243kpl"}"><figure class="${"svelte-243kpl"}"><img${add_attribute("src", logo, 0)} alt="${"onechart lister page"}" class="${"svelte-243kpl"}"></figure></a>
+  return `<header class="${"svelte-243kpl"}"><a href="${"http://onechart.xyz/index.html"}" class="${"svelte-243kpl"}"><figure class="${"svelte-243kpl"}"><img${add_attribute("src", logo, 0)} alt="${"onechart lister page"}" class="${"svelte-243kpl"}"></figure></a>
 </header>`;
 });
 const _layout_svelte_svelte_type_style_lang = "";

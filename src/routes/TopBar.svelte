@@ -6,7 +6,7 @@
 
 
 <header>
-    <a href="http://onechart.xyz/">
+    <a href="http://onechart.xyz/index.html">
         <figure>
             <img src={logo} alt="onechart lister page"/>
         </figure>
